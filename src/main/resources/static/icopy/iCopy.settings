@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <CustomCulture>False</CustomCulture>
+  <Machine Name="DESKTOP-QGRTR06">
+    <PDFAskWhereToSave>True</PDFAskWhereToSave>
+  </Machine>
+  <Culture>(Default)</Culture>
+  <DefaultScanSettings>
+<ScanSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Brightness>0</Brightness>
+  <Center>true</Center>
+  <Contrast>0</Contrast>
+  <PaperSize>
+    <Height>1169</Height>
+    <PaperName>A4</PaperName>
+    <RawKind>0</RawKind>
+    <Width>827</Width>
+  </PaperSize>
+  <Resolution>300</Resolution>
+  <Intent>ColorIntent</Intent>
+  <Quality>100</Quality>
+  <Preview>false</Preview>
+  <Scaling>100</Scaling>
+  <Copies>1</Copies>
+  <Path />
+  <Multipage>false</Multipage>
+  <ScanOutput>Printer</ScanOutput>
+  <UseADF>false</UseADF>
+  <Duplex>false</Duplex>
+  <RotateDuplex>false</RotateDuplex>
+  <BitDepth>0</BitDepth>
+</ScanSettings></DefaultScanSettings>
+  <Machine Name="DESKTOP-QGRTR06">
+    <Center>True</Center>
+  </Machine>
+  <DefaultScanner>
+  </DefaultScanner>
+  <Machine Name="DESKTOP-QGRTR06">
+    <PDFOpenAfterAcquisition>False</PDFOpenAfterAcquisition>
+  </Machine>
+  <StoreLocation>False</StoreLocation>
+  <LastVersionCheck>2011-01-01</LastVersionCheck>
+  <DeviceID>
+  </DeviceID>
+  <PrinterSize>A4</PrinterSize>
+  <Machine Name="DESKTOP-QGRTR06">
+    <PDFSavePath>
+    </PDFSavePath>
+  </Machine>
+  <Machine Name="DESKTOP-QGRTR06">
+    <FileOpenAfterAcquisition>False</FileOpenAfterAcquisition>
+  </Machine>
+  <Location>100, 100</Location>
+  <DefaultPrinter>
+  </DefaultPrinter>
+  <Machine Name="DESKTOP-QGRTR06">
+    <FileSavePath>
+    </FileSavePath>
+  </Machine>
+  <RememberSettings>True</RememberSettings>
+  <Machine Name="DESKTOP-QGRTR06">
+    <FileAskWhereToSave>True</FileAskWhereToSave>
+  </Machine>
+  <PrintColor>True</PrintColor>
+  <LastScanSettings>
+<ScanSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Brightness>0</Brightness>
+  <Center>true</Center>
+  <Contrast>0</Contrast>
+  <PaperSize>
+    <Height>1169</Height>
+    <PaperName>A4</PaperName>
+    <RawKind>0</RawKind>
+    <Width>827</Width>
+  </PaperSize>
+  <Resolution>300</Resolution>
+  <Intent>ColorIntent</Intent>
+  <Quality>100</Quality>
+  <Preview>false</Preview>
+  <Scaling>100</Scaling>
+  <Copies>1</Copies>
+  <Path />
+  <Multipage>false</Multipage>
+  <ScanOutput>Printer</ScanOutput>
+  <UseADF>false</UseADF>
+  <Duplex>false</Duplex>
+  <RotateDuplex>false</RotateDuplex>
+  <BitDepth>0</BitDepth>
+</ScanSettings></LastScanSettings>
+  <Silent>False</Silent>
+  <CheckForUpdates>True</CheckForUpdates>
+</Settings>

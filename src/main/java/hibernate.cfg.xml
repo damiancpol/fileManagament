@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory  >
+  <property name="hibernate.connection.driver_class">net.sourceforge.jtds.jdbc.Driver</property>
+ <property name="hibernate.dialect">org.hibernate.dialect.SQLServer2008Dialect</property>
+  <property name="hibernate.connection.url">jdbc:jtds:sqlserver://localhost:1433/test1</property>  
+  <property name="hibernate.connection.password">SomePassword</property>
+  <property name="hibernate.connection.username">root</property>
+     
+         <mapping class="wit.entities.Uusers"></mapping>
+     <mapping class="wit.entities.Kalendarz"></mapping>
+     <mapping class="wit.entities.Urlop"></mapping>
+     <mapping class="wit.entities.Dzial"></mapping>
+     <mapping class="wit.entities.Czaspracy"></mapping>
+     <mapping class="wit.entities.Pracownik"></mapping>
+     <mapping class="wit.entities.Groups"></mapping>
+      <mapping class="wit.entities.Final"></mapping>
+      <mapping class="wit.entities.FileLoad"></mapping>
+      <mapping class="wit.entities.Logins"></mapping>
+       <mapping class="wit.entities.Docs"></mapping>
+       <mapping class="wit.entities.Scope"></mapping>
+       <mapping class="wit.entities.Language"></mapping>
+       <mapping class="wit.entities.NavigationTags"></mapping>
+       <mapping class="wit.entities.DocumentCategory"></mapping>
+       <mapping class="wit.entities.Grupa"></mapping>
+       <mapping class="wit.entities.Stanowisko"></mapping>
+       <mapping class="wit.entities.PrzynaleznoscGrup"></mapping>
+    </session-factory>
+    
+</hibernate-configuration>

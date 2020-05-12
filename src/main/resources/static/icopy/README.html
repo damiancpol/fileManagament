@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>iCopy 1.6.3</title>
+</head>
+<body>
+
+    <link href="https://sourceforge.net/p/icopy/git/ci/master/tree/style.css?format=raw" type="text/css" rel="stylesheet"></link>
+<h1 id="icopy-1.6.3">iCopy 1.6.3</h1>
+<h4 id="release-date-14-april-2016">Release Date: 14 April 2016</h4>
+<p>iCopy is a free and open source software that lets you combine your scanner and printer into a powerful,
+but easy to use photocopier by only pressing a button.Its simple user interface lets you manage scanner
+and printer options, like brightness, contrast, number of copies in a couple of seconds. Automatic Document Feeders (ADF) and duplex scanners are supported. You can also save the acquired image to file or to PDF.
+As it's small and no installation is required, iCopy is also suitable for USB pen drives.</p>
+<p>Website: <a href="http://icopy.sourceforge.net">http://icopy.sourceforge.net</a></p>
+<ol>
+<li>Features</li>
+<li>Requirements</li>
+<li>Command line parameters</li>
+<li>Known bugs and solutions</li>
+<li>Support</li>
+<li>Please help!</li>
+</ol>
+<h2 id="features">1. Features</h2>
+<ul>
+<li>Simple and quick interface</li>
+<li>Scanning mode selection</li>
+<li>Run by pressing scanner button</li>
+<li>Resolution, brightness and contrast, scaling settings</li>
+<li>Scan Multiple Pages before printing, including ADF support</li>
+<li>Scan duplex (with compatible scanners)</li>
+<li>Scan to file function</li>
+<li>Scan to PDF with no external software</li>
+<li>Preview function</li>
+<li>Command-line parameters</li>
+<li>No installation needed and little hard disk space required</li>
+<li>Compatible with all WIA scanners and all printers</li>
+</ul>
+<h2 id="system-requirements">2. System requirements</h2>
+<ul>
+<li>Windows XP SP1/Vista/7/8</li>
+<li>Microsoft .NET Framework 2.0 or higher</li>
+<li>A WIA (Windows Image Acquisition) compatible scanner</li>
+</ul>
+<blockquote>
+<p>NOTE: Some older scanners are not compatible with WIA. If you have troubles with your scanner, please report it to the iCopy <a href="https://sourceforge.net/p/icopy/bugs/">bug tracker</a>.
+A list of the known compatible scanners can be found at <a href="http://icopy.sourceforge.net/compatible-scanners">http://icopy.sourceforge.net/compatible-scanners</a></p>
+</blockquote>
+<h2 id="command-line-parameters">3. Command line parameters</h2>
+<hr />
+<p>iCopy can be run as a Windows application, but its functionality can entirely be controlled from the command line using the following syntax</p>
+<pre><code>icopy.exe [/copy /file /pdf ..] [params]
+</code></pre>
+<p><code>[params]</code> are the parameters to be used. If a parameter is not specified, iCopy uses the values stored in settings.</p>
+<blockquote>
+<p>NOTE: Parameters are not case sensitive</p>
+</blockquote>
+<h3 id="actions">Actions</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/copy</code> or <code>/c</code></td>
+<td>Directly copy from scanner to printer, using settings provided or default settings</td>
+</tr>
+<tr>
+<td><code>/file</code>, <code>/ScanToFile</code> or  <code>/f</code></td>
+<td>Scan to a file. If file path is not provided a dialog will let you choose where to save the acquired image</td>
+</tr>
+<tr>
+<td><code>/pdf</code></td>
+<td>Output to PDF file</td>
+</tr>
+<tr>
+<td><code>/copyMultiplePages</code></td>
+<td>Scan a multipage document.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parameters">Parameters:</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/adf</code></td>
+<td>Enable ADF support</td>
+</tr>
+<tr>
+<td><code>/duplex</code></td>
+<td>Enable duplex ADF</td>
+</tr>
+<tr>
+<td><code>/resolution</code> or <code>/r	[value]</code></td>
+<td>Specify a valid scanning resolution in DPI (eg <code>/resolution 100</code>, <code>/r 500</code>)</td>
+</tr>
+<tr>
+<td><code>/color</code> or <code>/col</code></td>
+<td>Color acquisition</td>
+</tr>
+<tr>
+<td><code>/grayscale</code> or <code>/gray</code></td>
+<td>Grayscale acquisition</td>
+</tr>
+<tr>
+<td><code>/text</code> or <code>/bw</code></td>
+<td>Black and white (text) acquisition</td>
+</tr>
+<tr>
+<td><code>/copies</code> or <code>/nc [value]</code></td>
+<td>The number of copies to be printed (default is one copy)</td>
+</tr>
+<tr>
+<td><code>/scaling</code> or <code>/s</code></td>
+<td>The scaling percentage (eg <code>/s 150</code>) default value: 100</td>
+</tr>
+<tr>
+<td><code>/brightness</code>	or <code>/b [value]</code></td>
+<td>Value from -100 to 100 for brightness</td>
+</tr>
+<tr>
+<td><code>/contrast</code> -or -	<code>/cnt [value]</code></td>
+<td>Value from -100 to 100 for constrast</td>
+</tr>
+<tr>
+<td><code>/quality [value]</code></td>
+<td>Value from 0 to 100 for JPEG quality</td>
+</tr>
+<tr>
+<td><code>/preview</code> -or- <code>/p</code></td>
+<td>Enables preview mode</td>
+</tr>
+<tr>
+<td><code>/path &quot;path&quot;</code></td>
+<td>Specify the path for file acquisition. Paths containing spaces must be put between inverted commas (eg. <code>/path &quot;C:\my folder\file.jpg&quot;</code>). Valid file estensions are .jpg, .bmp, .gif, .png, or .pdf for PDF docs</td>
+</tr>
+<tr>
+<td><code>/printer &quot;printer name&quot;</code></td>
+<td>Specify the name of the printer between inverted commas. If not provided, the system default printer is used</td>
+</tr>
+<tr>
+<td><code>/open</code></td>
+<td>Open the file after the acquisition</td>
+</tr>
+</tbody>
+</table>
+<h3 id="examples">Examples</h3>
+<ul>
+<li><p>Copy with 200 DPI resolution in text mode, with default brightness and contrast:</p>
+<pre><code>  icopy.exe /copy /r 200 /text
+</code></pre>
+</li>
+<li><p>Save to file &quot;C:\my folder\file.jpg&quot; with brighness 0 and contrast 10:</p>
+<pre><code>  icopy.exe /file /brightness 0 /contrast 10 /path &quot;C:\my folder\file.jpg&quot;
+</code></pre>
+</li>
+<li><p>Prints the file to PDF</p>
+<pre><code>  icopy.exe /pdf
+</code></pre>
+</li>
+</ul>
+<h4 id="advanced-parameters">Advanced parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/silent</code></td>
+<td>No message boxes.</td>
+</tr>
+<tr>
+<td><code>/wiareg /wr</code></td>
+<td>Registers WIA components. Use if WIA errors are thrown during execution.</td>
+</tr>
+<tr>
+<td><code>/register /reg</code></td>
+<td>Registers iCopy to the scanner buttons.</td>
+</tr>
+<tr>
+<td><code>/unregister /unreg</code></td>
+<td>Unregisters iCopy from the scanner button applications.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="known-errors-solutions">4. Known errors &amp; solutions</h2>
+<h3 id="wiaaut.dll-not-registered-error">Wiaaut.dll not registered error</h3>
+<p>iCopy asks if you want to register WIA Automation Layer. If it fails in doing so, you can register it manually:</p>
+<ul>
+<li><p>Copy the file wiaaut.dll that you find in iCopy directory to C:\Windows\system32\</p>
+</li>
+<li><p>Open a Prompt command with administrator rights</p>
+</li>
+<li><p>Enter commands:</p>
+<pre><code>  cd C:\Windows\system32\
+  regsvr32 wiaaut.dll
+</code></pre>
+</li>
+<li><p>You should receive a confirmation of wiaaut.dll registration</p>
+</li>
+<li><p>Now iCopy should run as expected.</p>
+</li>
+</ul>
+<h3 id="scanner-isnt-recognized-by-icopy">Scanner isn't recognized by iCopy</h3>
+<p>If you think that your scanner is WIA compatible but it isn't recognized by iCopy, please <a href="https://sourceforge.net/p/icopy/bugs/new/">file a bug report</a>.
+Please attach the .log file that is created either in <code>C:\Users\Your Username\AppData\Local\iCopy\</code> or in iCopy executable folder.</p>
+<p>A list of the known compatible scanners can be found at <a href="http://icopy.sourceforge.net/compatible-scanners">http://icopy.sourceforge.net/compatible-scanners</a></p>
+<h2 id="support">5. Support</h2>
+<p>Please read the F.A.Q.:
+<a href="http://icopy.sourceforge.net/faq">http://icopy.sourceforge.net/faq</a></p>
+<p>If you want to report an exception or a bug, to suggest a new feature or a change, or ask for support,
+please use Sourceforge Bug tracker:</p>
+<p><a href="https://sourceforge.net/p/icopy/bugs/">https://sourceforge.net/p/icopy/bugs/</a></p>
+<h2 id="please-help">6. Please Help!</h2>
+<p>iCopy is free software, so it is supported only by your generous donations and by advertisements on the website.
+If you like iCopy, please help me to make it a better software! You can:</p>
+<ul>
+<li>Report problems, tell me your ideas or let me know what you like or don't like in iCopy.</li>
+<li>Tell your friends about iCopy, on your blog, on Facebook, Twitter or wherever you like, so that it gets
+more and more famous.</li>
+<li>Surf the website, leave comments, and maybe give a look (and a click) at the advertisements :-).</li>
+<li><strong>Donate a small amount</strong> (even a few $) with Paypal: <a href="http://icopy.sourceforge.net/donate/">http://icopy.sourceforge.net/donate/</a>.</li>
+</ul>
+
+
+</body>
+</html>
